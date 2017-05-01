@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MBS EQUIPMENT CO></title>
+	<meta charset="UTF-8">
+	<meta name="description" content="MBS EQUIPMENT CO">
+	<meta name="author" content="Ghayoor Badshah">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:auto;width:1024px;margin-top:2px;}
+#wrapper{width:100%;border:none;}
+#h-one,#p-one{margin-left:5px; margin-top:0; margin-right:0; margin-bottom:0;font-weight:bold;}
+div{float:left;}
+input{border:none;background-color:GhostWhite;}
+</style>
+<body>
+	<div id = "wrapper">
+		<div style = "width:100%;">
+			<div style = "width:25%;height:111px;">
+				<p style = "font-weight:bold;margin:5px;font-size:30px;">MBS</p>
+				<p style = "font-weight:bold;margin:0 5px 0 5px;font-size:12px;">EQUIPMENT CO.</p>
+			</div>
+			<div style = "text-align:center;width:74%;">
+				<p style = "font-weight:bold;margin:5px;font-size:40px;" id = "mbsEquipment">MBS EQUIPMENT CO.</p>
+				<p style = "font-weight:bold;margin:0 5px 0 5px;font-size:15px;">10601 Glenoaks Boulvevard</p>
+				<p style = "font-weight:bold;margin:0 5px 0 5px;font-size:15px;">Pacoima, CA 91331</p>
+				<p style = "font-weight:bold;margin:0 5px 0 5px;font-size:15px;">(818) 890-6000</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:100%;text-align:center;">
+				<p style = "font-weight:bold;letter-spacing:10px;">Pull List (Sales)</p>
+			</div>
+		</div>	
+		<div style = "width:100%;">
+			<div style = "height:24px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Date:</p>
+			</div>	
+			<div>
+				<p style = "margin:0 5px 0 5px;"><input id = "todayDate" style = "font-weight:bold;" type = "date"></input></p>
+			</div>
+			<div style = "height:24px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Time:</p>
+			</div>	
+			<div>
+				<p style = "margin:0 5px 0 5px;"><input id = "currentTime" style = "font-weight:bold;"type = "time"></input></p>
+			</div>
+			<div style = "border:solid;height:24px;border-right:none;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Quote:</p>
+			</div>	
+			<div style = "height:24px;border:solid;border-left:none;">
+				<p style = "margin:0 5px 0 5px;"><input id = "quote" style = "font-weight:bold;" type = "number"></input></p>
+			</div>
+			<div style = "float:right;height:24px;">
+				<p style = "margin:0 5px 0 5px;"><input id = "pageNo" style = "font-weight:bold;"type = "text"></input></p>
+			</div>
+			<div style = "float:right;height:24px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Pages:</p>
+			</div>	
+
+		</div>
+		<div style = "width:100%; border:1px solid;border-bottom:none;">
+			<div>
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Quote#:</p>
+			</div>
+			<div style = "height:25px;">
+				<p style = "margin:0 5px 0 5px;"><input id = "quoteNo" type = "number"></input></p>
+			</div>
+			<div>
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Order Desc:</p>
+			</div>
+			<div>
+				<p style = "margin:0 5px 0 5px;"><input id = "orderDescription" style = "font-weight:bold;" type = "text"></input></p>
+			</div>
+			<div style = "clear:left;height:22px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Customer:</p>
+			</div>
+			<div style = "width:50%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "customerName" style = "width:100%; font-weight:bold;" type = "text"></input></p>
+			</div>
+			<div style = "clear:left;height:22px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Package Type:</p>
+			</div>
+			<div style = "width:50%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "packageType" style = "font-weight:bold;width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;border:1px solid;border-bottom:none;">
+			<div style = "height:22px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Billing Address:</p>
+			</div>
+			<div style = "width:50%;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;"><input id = "billingAddress" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "height:22px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Others:</p>
+			</div>
+			<div>
+				<p style = "margin:0 5px 0 5px;font-weight:bold;"><input id = "others" type = "text"></input></p>
+			</div>
+			<div style = "height:22px;clear:left;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Phone:</p>
+			</div>
+			<div>
+				<p style = "margin:0 5px 0 5px;font-weight:bold;"><input id = "phoneNo" style = "font-weight:bold;"type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%; border:1px solid;border-bottom:none;">
+			<div style = "height:24px;">
+				<p style = "font-weight:bold;margin:0 5px 0px 5px;">Ship Date:</p>
+			</div>
+			<div>
+				<p style = "margin:0 5px 0 5px;"><input id = "shipDate" style = "font-weight:bold;" type = "date"></input></p>
+			</div>
+			<div style = "clear:left;height:22px;">
+				<p style = "font-weight:bold;margin:0 5px 0 5px;">Customer Contact:</p>
+			</div>
+			<div style = "width:50%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "customerContact" style = "width:100%;font-weight:bold;"type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;border:1px solid;border-botttom:none;">
+			<div style = "height:22px;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;">Terms:</p>
+			</div>
+			<div>
+				<p style = "margin:0 5px 0 5px;font-weight:bold;"><input id = "terms" type = "text" style = "font-weight:bold;"></input></p>
+			</div>
+			<div style = "float:right;width:20%;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;"><input id = "billType" type = "text" style = "font-weight:bold;width:100%;"></input></p>
+			</div>
+			<div style = "height:22px; float:right;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;font-weight:bold;">Bill Type:</p>
+			</div>
+			<div style = "height:22px; clear:left;">
+				<p style = "margin:0 5px 0 5px;font-weight:bold;font-weight:bold;">Salesperson:</p>
+			</div>
+			<div style = "width:30%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "salesPerson" style = "width:100%;font-weight:bold;" type = "text"></input></p>
+			</div>
+			<div style = "float:right;width:20%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "shipMethod" style = "width:100%;font-weight:bold;" type = "text"></input></p>
+			</div>
+			<div style = "height:22px; float:right;">
+				<p style = "font-weight:bold;margin:0 5px 0 5px;">Ship Method:</p>
+			</div>
+			<div style = "height:22px;clear:left;">
+				<p style = "font-weight:bold;margin:0 5px 0 5px;">Rental Agent:</p>
+			</div>
+			<div style = "width:40%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "rentalAgent" style = "width:100%;font-weight:bold;" type = "text"></input></p>
+			</div>
+			<div style = "height:22px;clear:left;">
+				<p style = "font-weight:bold;margin:0 5px 0 5px;">Pay Type:</p>
+			</div>
+			<div style = "width:40%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "payType" style = "width:100%;font-weight:bold;" type = "text"></input></p>
+			</div>
+			<div style = "height:22px;">
+				<p style = "font-weight:bold;margin:0 5px 0 5px;">P.O:</p>
+			</div>
+			<div style = "width:40%;">
+				<p style = "margin:0 5px 0 5px;"><input id = "pO" style = "width:100%;font-weight:bold;" type = "text"></input></p>
+			</div>
+		</div><div style = "height:20px;width:100%;"></div>
+		<div style = "width:100%;">
+			<table style = "width: 100.3%; border:1px solid black;border-collapse:collapse;">
+				<tr>
+					<th style = "border-collapse:collapse;border:1px solid;">Stock#</th>
+					<th style = "border-collapse:collapse;border:1px solid;">Dectription</th>
+					<th style = "border-collapse:collapse;border:1px solid;">Quantity Ordered</th>
+					<th style = "border-collapse:collapse;border:1px solid;">Quantity Shipped</th>
+					<th style = "border-collapse:collapse;border:1px solid;">To Go Out</th>
+				</tr>
+				<tr>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "firstStock#" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "firstDescription" style = "width:99%;" type = "text"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "firstQuantityOrder" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "firstQuantityShipped" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "firstToGoOut" style = "width:99%;" type = "number"></input></td>
+				</tr>
+				<tr>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdStock#" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdDescription" style = "width:99%;" type = "text"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdQuantityOrder" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdQuantityShipped" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdToGoOut" style = "width:99%;" type = "number"></input></td>
+				</tr>
+				<tr>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdStock#" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdDescription" style = "width:99%;" type = "text"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdQuantityOrder" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdQuantityShipped" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "thirdToGoOut" style = "width:99%;" type = "number"></input></td>
+				</tr>
+				<tr>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "fifthStock#" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "fifthDescription" style = "width:99%;" type = "text"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "fifthQuantityOrder" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "fifthQuantityShipped" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "fifthToGoOut" style = "width:99%;" type = "number"></input></td>
+				</tr>
+				<tr>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "sixthStock#" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "sixthDescription" style = "width:99%;" type = "text"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "sixthQuantityOrder" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "sixthQuantityShipped" style = "width:99%;" type = "number"></input></td>
+					<td style = "border-collapse:collapse;border:1px solid;"><input id = "sixthToGoOut" style = "width:99%;" type = "number"></input></td>
+				</tr>
+			</table>
+		</div>		
+	</div>
+</body>
+</html>

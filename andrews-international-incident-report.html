@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrews International Incident Report</title>
+	<meta charset="UTF-8">
+ 	<meta name="description" content="Andrews International Incident Report">
+  	<meta name="author" content="Ghayoor Badshah">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{width:1024px;margin:auto;}
+#wrapper{width:100%;}
+div{float:left;}
+p{margin:2px 5px 2px 5px;}
+</style>
+</head>
+<body>
+	<div id = "wrapper">
+		<div style = "width:100%;">
+			<p style = "font-weight:bold;text-align:center;font-size:30px;">ANDREWS INTERNATIONAL</p>
+			<p style = "font-weight:bold;text-align:center;font-size:30px;">INCIDENT REPORT</p>
+		</div>	
+		<div style = "width:100%;">
+			<div style = "width:30%;">
+				<p style = "text-align:center;">DR #</p>
+				<p><input id = "dr#" style = "width:100%;"type = "text"></input></p>
+			</div>
+			<div style = "width:51.5%;">
+				<p style = "text-align:center;">INVESTIGATION TOPIC</p>
+				<p><input id = "investigationTopic" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "float:right;">
+				<p style = "text-align:center;">EXTRA</p>
+				<p><input id = "extra" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:57%;">
+				<p style = "text-align:center;">ADDRESS OF OCCURRENCE</p>
+				<p><input id = "addressOfOccurrence" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">DATE & TIME OCCURRRENCE</p>
+				<p><input id = "dateAndTimeOccurrence" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "float:right;">
+				<p style = "text-align:center;">DATE & TIME REPORTED</p>
+				<p><input id = "dateAndTimeReported" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:40%;">
+				<p style = "text-align:center;">EXACT LOCATION ON PREMISSES</p>
+				<p><input id = "exactLocationOnPremisses" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">NOTIFICATION - PERSONS</p>
+				<p><input id = "notificationPerson" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:39.2%;float:right;">
+				<p style = "text-align:center;">CONNECTED REPORTS - TYPE & DR #</p>
+				<p><input id = "connectedRepotere" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:40%;">
+				<p style = "text-align:center;">TYPE OF PROPERTY TAKEN/LOST: NONE</p>
+				<p><input id = "typeOfPropertyTakenLost" style = "width:100%;"type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">STOLEN/LOST</p>
+				<p><input id = "stolenLost" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">RECOVERED</p>
+				<p><input id = "recoverd" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "float:right;width:23.4%;">
+				<p style = "text-align:center;">ESTIMATED DAMAGE</p>
+				<p><input id = "estimatedDamage" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:25%;">
+				<p style = "text-align:center;">VEHICLE INVOLVED</p>
+				<p><input id = "vehicleInvolved" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">YEAR</p>
+				<p><input id = "year" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;">
+				<p style = "text-align:center;">MAKE</p>
+				<p><input id = "make" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:34.05%;float:right;">
+				<p style = "text-align:center;">MODEL</p>
+				<p><input id = "model" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:25%;">
+				<p style = "text-align:center;">TYPE</p>
+				<p><input id = "type" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;">
+				<p style = "text-align:center;">COLOR</p>
+				<p><input id = "color" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">LICENSE PLATE #</p>
+				<p><input id = "licensePlate" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:31.33%;float:right;">
+				<p style = "text-align:center;">STATE</p>
+				<p><input id = "state" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:50%;">
+				<p style = "text-align:center;">BODY (DAMAGE, MODIFIED, STICKER) NONE</p>
+				<p><input id = "bodyDamage" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:49.5%;float:right;">
+				<p style = "text-align:center;">WINDOWS (DAMAGE, TINT, CURTAINS) NONE</p>
+				<p><input id = "windowsDamage" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "text-align:center;">POINT OF ENTRY (DOOR</p>
+				<p style = "text-align:center;">WINDOW, ETC, DESCRIBE</p>
+				<p style = "text-align:center;">LOCATION)</p>
+				<p><input id = "pointOfEntry" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">METHOD OF ENTRY (PRIED</p>
+				<p style = "text-align:center;">LOCK, CUT SCREEN, SMASHED</p>
+				<p style = "text-align:center;">WINDOW, ETC)</p>
+				<p><input id = "methodOfEntry" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div>
+				<p style = "text-align:center;">INSTRUMENT/TOOL USED(KEY,</p>
+				<p style = "text-align:center;">BODILY FORCE SCREWDRIVER,</p>
+				<p style = "text-align:center;">ETC)</p>
+				<p><input id = "instrumentToolsUsed" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:31.5%; float:right;">
+				<p style = "text-align:center;">TYPE OF WINDOW OR DOOR</p>
+				<p style = "text-align:center;">(WOOD PANEL, SLIDING GLASS)</p>
+				<p style = "text-align:center;">WOOD SASH, ETC</p>
+				<p><input id = "typeOfWindowOrDoor" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5%;">
+				<p style = "text-align:center;">SUSP</p>
+				<p>N/A</p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">SEX</p>
+				<p><input id = "sex-one" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:9.2%;">
+				<p style = "text-align:center;">DESC</p>
+				<p><input id = "desc-one" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">HAIR</p>
+				<p><input id = "hair-one" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">EYES</p>
+				<p><input id = "eyes-one" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:7%;">
+				<p style = "text-align:center;">HEIGHT</p>
+				<p><input id = "height-one" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:7%;">
+				<p style = "text-align:center;">WEIGHT</p>
+				<p><input id = "weight-one" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">AGE</p>
+				<p><input id = "age-one" style = "width:100%" type = "number"></input></p>
+			</div>
+			<div style = "float:right;">
+				<p style = "text-align:center;">CLOTHING, NAME, DOB, NAME, BKA, NO. & CHARGE IF ARRESTED</p>
+				<p><input id = "clothingNameDob-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5%;">
+				<p style = "text-align:center;">SUSP</p>
+				<p>N/A</p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">SEX</p>
+				<p><input id = "sex-two" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:9.2%;">
+				<p style = "text-align:center;">DESC</p>
+				<p><input id = "desc-two" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">HAIR</p>
+				<p><input id = "hair-two" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">EYES</p>
+				<p><input id = "eyes-two" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:7%;">
+				<p style = "text-align:center;">HEIGHT</p>
+				<p><input id = "height-two" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:7%;">
+				<p style = "text-align:center;">WEIGHT</p>
+				<p><input id = "weight-two" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:5%;">
+				<p style = "text-align:center;">AGE</p>
+				<p><input id = "age-two" style = "width:100%" type = "number"></input></p>
+			</div>
+			<div style = "float:right;">
+				<p style = "text-align:center;">CLOTHING, NAME, DOB, NAME, BKA, NO. & CHARGE IF ARRESTED</p>
+				<p><input id = "clothingNameDob-two" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:99.9%;">
+				<p style = "font-weight:bold;">UNIQUE OR UNUSAL ACTION MAY TEND TO IDENTIFY THIS SUSPECT&#39;S MO</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "border:1px solid black;">
+				<p style = "text-align:center;">CODE</p>
+				<p>&nbsp;&nbsp;&nbsp;</p>
+				<p>&nbsp;&nbsp;&nbsp;</p>
+			</div>
+			<div style = "width:15%;border:1px solid black;">
+				<p style = "text-align:center;">V</p>
+				<p style = "text-align:center;">VICTIM</p>
+				<p>&nbsp;&nbsp;&nbsp;</p>
+			</div>
+			<div style = "width:15%;border:1px solid black;">
+				<p style = "text-align:center;">W</p>
+				<p style = "text-align:center;">WITNESS</p>
+				<p>&nbsp;&nbsp;&nbsp;</p>
+			</div>
+			<div style = "width:18%;border:1px solid black;">
+				<p style = "text-align:center;">R</p>
+				<p style = "text-align:center;">PERSON</p>
+				<p style = "text-align:center;">REPORTING</p>
+			</div>
+			<div style = "width:15.1%;border:1px solid black;">
+				<p style = "text-align:center;">S</p>
+				<p style = "text-align:center;">PERSON</p>
+				<p style = "text-align:center;">SECURING</p>
+			</div>
+			<div style = "width:15%;border:1px solid black;">
+				<p style = "text-align:center;">D</p>
+				<p style = "text-align:center;">PERSON</p>
+				<p style = "text-align:center;">DISCOVERING</p>
+			</div>
+			<div style = "width:15.3%;border:1px solid black;">
+				<p style = "text-align:center;">R</p>
+				<p style = "text-align:center;">PERSON</p>
+				<p style = "text-align:center;">REPORTING</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>NAME AND DOB</p>
+				<p><input id = "nameAndDob-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>RESIDENCE</p>
+				<p><input id = "residence-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input  id = "telephone-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-two" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>OCCUPATION & DRIVER LIC #</p>
+				<p><input id = "occupationAndDriverLic-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>BUSINESS RESIDENCE</p>
+				<p><input id = "businessResidence-one" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input id = "telephone-two" style = "width:100%;"type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-three" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>NAME AND DOB</p>
+				<p><input id = "nameAndDob-two" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>RESIDENCE</p>
+				<p><input id = "residence-two" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input  id = "telephone-three" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-four" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>OCCUPATION & DRIVER LIC #</p>
+				<p><input id = "occupationAndDriverLic-two" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>BUSINESS RESIDENCE</p>
+				<p><input id = "businessResidence-two" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input id = "telephone-four" style = "width:100%;"type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-five" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>NAME AND DOB</p>
+				<p><input id = "nameAndDob-three" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>RESIDENCE</p>
+				<p><input id = "residence-three" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input  id = "telephone-five" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-six" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>OCCUPATION & DRIVER LIC #</p>
+				<p><input id = "occupationAndDriverLic-three" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>BUSINESS RESIDENCE</p>
+				<p><input id = "businessResidence-three" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input id = "telephone-six" style = "width:100%;"type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-seven" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>NAME AND DOB</p>
+				<p><input id = "nameAndDob-four" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>RESIDENCE</p>
+				<p><input id = "residence-four" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input  id = "telephone-seven" style = "width:100%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:5.4%;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p><input id = "code-eight" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p>OCCUPATION & DRIVER LIC #</p>
+				<p><input id = "occupationDriverLic-four" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:36.7%;">
+				<p>BUSINESS RESIDENCE</p>
+				<p><input id = "businessResidence-four" style = "width:100%;" type = "text"></input></p>
+			</div>
+			<div style = "width:25%;float:right;">
+				<p>TELEPHONE #</p>
+				<p><input id = "telephone-eight" style = "width:100%;"type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:32%;">
+				<p style = "text-align:center;font-weight:bold;">SUPERVISOR APPROVING</p>
+				<p><input id = "supervisorApproving" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:32%;">
+				<p style = "text-align:center;font-weight:bold;">INVESTIGATING OFFICER</p>
+				<p><input id = "investigatingOfficer" style = "width:100%" type = "text"></input></p>
+			</div>
+			<div style = "width:35.3%;float:right;">
+				<p style = "text-align:center;font-weight:bold;">PERSON REPORTING (SIGNATURE)</p>
+				<p><input id = "personReporting" style = "width:100%" type = "text"></input></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

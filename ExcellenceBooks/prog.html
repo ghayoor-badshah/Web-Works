@@ -1,0 +1,54 @@
+<!--Images from json files loaded here-->
+<div class = "webhtml">
+	<img src = "{{myBooks.pro[myBooks.counter]}}" class = "webImages"><br><br>
+
+<!--Previous and Next button for carsoul-->
+<center><button type = "button" class = "btn btn-default" ng-click = "previous()">Previous</button>
+<button type = "button" class = "btn btn-default" ng-click = "next()">Next</button></center>
+</div>
+<div class = "webDes">
+	<table>
+		<tr>
+			<td><strong>Name of The Book </strong></td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td> {{books.prog[myBooks.counter].name}}</td>
+		<tr>
+		<tr>
+			<td><strong>Description </strong></td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td> {{books.prog[myBooks.counter].about}}</td>
+		<tr>
+		<tr>
+			<td><strong>Price </strong></td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td> {{books.prog[myBooks.counter].price | currency}}</td>
+		<tr>
+		<tr>
+			<td><strong>Shipping </strong></td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td> {{books.prog[myBooks.counter].shipping | currency}}</td>
+		<tr>
+
+	</table>
+<center>
+	<a href = "index.html">
+		<button type = "button" class = "btn btn-default">Go Back</button>
+	</a>
+		<button type = "button" class = "btn btn-default" onClick = "buy()">BUY</button>
+</center>
+</div>
+<section id = "myForm_one">
+	<form name = "myForm">
+		<input type = "text" ng-model = "user.fname" name = "firstName" ng-pattern = "/^[A-z]+$/" placeholder = "First Name">
+			<span ng-show = "myForm.firstName.$invalid" style = "color: red; font-size: 11px;">must be charater</span><br><br>
+		<input type = "text" ng-model = "user.lname" name = "lastName" ng-pattern = "/^[A-z]+$/" placeholder = "Last Name">
+			<span ng-show = "myForm.lastName.$invalid" style = "color: red; font-size: 11px;">must be character</span><br><br>
+		<input type = "text" ng-model = "CC" name = "cc" ng-pattern = "/^(([1-9]*)|(([1-9]*).([0-9]*)))$/" placeholder = "Credit Card Number">
+			<span ng-show = "myForm.cc.$invalid" style = "color: red; font-size: 11px;">must be digits</span><br><br>
+		<input type = "text" ng-model = "email" name = "em" ng-pattern = "/^([A-Za-z0-9_\-\,]){1,}\@([A-Za-z9-9_\-\,]){1,}\.([A-Za-z]{2,4})$/" placeholder = "EMAIL">
+			<span  ng-show = "myForm.em.$invalid" style = "color: red; font-size: 11px;">invalid email</span><br>
+			<span  ng-show = "myForm.em.$valid && myForm.em.$dirty" style = "color: blue; font-size: 11px;"><button  type = "button" class = "btn btn-default" onClick = "ok()">OK</button></span><br>
+		
+<br><br>
+</section>
+

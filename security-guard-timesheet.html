@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Security Officer Timesheet</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Security Officer Timesheet">
+	<meta name="author" content="Ghayoor Badshah">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:auto;width:1024px;}
+#wrapper{width:100%;}
+h1,h3{text-align:center;}
+input{width:98%;border:none;}
+#nameAndAddress{width:80.6%;border:1px solid black;}
+table{width:100%;border-collapse: collapse;border:1px solid black;}
+td{border-collapse: collapse;border:1px solid black;}
+.td-one{font-weight:bold;}
+#firstEmployeeInitial,#secondEmployeeInitial{width:10%;border-bottom:1px solid black;}
+#employeeSig,#totalHours{width:20%;border-bottom:1px solid black;}
+#para-one,#para-two,#para-three,#para-four{text-align: justify; margin-left: 4px; margin-right:4px;}
+#para-five,#para-six{text-align:center;}
+</style>
+<script>
+	function total_hour(){
+		document.getElementById("totalHours").value =parseInt(document.getElementById("secondFriTotalHour").value) + parseInt(document.getElementById("firstFriTotalHour").value) + parseInt(document.getElementById("secondThurTotalHour").value) + parseInt(document.getElementById("firstThurTotalHour").value) + parseInt(document.getElementById("secondWedTotalHour").value) + parseInt(document.getElementById("firstWedTotalHour").value) + parseInt(document.getElementById("secondTueTotalHour").value) + parseInt(document.getElementById("firstTueTotalHour").value) + parseInt(document.getElementById("secondMonTotalHour").value) + parseInt(document.getElementById("firstMonTotalHour").value) + parseInt(document.getElementById("secondSunTotalHour").value) + parseInt(document.getElementById("firstSunTotalHour").value) + parseInt(document.getElementById("secondSatTotalHour").value) + parseInt(document.getElementById("firstSatTotalHour").value);
+		}
+</script>
+<body>
+	<div id = "wrapper"">
+		<h1>COMMAND GUARD SERVIECES</h1>
+		<h3>Security Guard Timesheet</h3>
+		<p>Work Site Name and Address <input type = "text" id = "nameAndAddress"></input></p>
+		<table>
+			<tr>
+				<td class = "td-one">Day of Week</td>
+				<td class = "td-one">Date</td>
+				<td class = "td-one">Time on Duty</td>	
+				<td class = "td-one">Employee Print Name</td>
+				<td class = "td-one">30 Min Meal Start</td>
+				<td class = "td-one">30 Min Meal End</td>
+				<td class = "td-one">Time off Duty</td>
+				<td class = "td-one">Total Daily Hours</td>
+				<td class = "td-one">Employee Signature</td>
+				<td class = "td-one">Client Signature</td>
+			</tr>
+			<tr>
+				<td>Saturday</td>
+				<td><input id = "firstSatDate" type = "text"></input></td>
+				<td><input id = "firstSatTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstSatEmployeeName" type = "text"></input></td>
+				<td><input id = "firstSatBreakStart" type = "number"></input></td>
+				<td><input id = "firstSatBreakEnd" type = "number"></input></td>
+				<td><input id = "firstSatTimeOff" type = "number"></input></td>
+				<td><input id = "firstSatTotalHour" type = "number"></input></td>
+				<td><input id = "firstSatEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstSatClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Saturday</td>
+				<td><input id = "secondSatDate" type = "text"></input></td>
+				<td><input id = "secondSatTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondSatEmployeeName" type = "text"></input></td>
+				<td><input id = "secondSatBreakStart" type = "number"></input></td>
+				<td><input id = "secondSatBreakEnd" type = "number"></input></td>
+				<td><input id = "secondSatTimeOff" type = "number"></input></td>
+				<td><input id = "secondSatTotalHour" type = "number"></input></td>
+				<td><input id = "secondSatEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondSatClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Sunday</td>
+				<td><input id = "firstSunDate" type = "text"></input></td>
+				<td><input id = "firstSunTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstSunEmployeeName" type = "text"></input></td>
+				<td><input id = "firstSunBreakStart" type = "number"></input></td>
+				<td><input id = "firstSunBreakEnd" type = "number"></input></td>
+				<td><input id = "firstSunTimeOff" type = "number"></input></td>
+				<td><input id = "firstSunTotalHour" type = "number"></input></td>
+				<td><input id = "firstSunEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstSunClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Sunday</td>
+				<td><input id = "secondSunDate" type = "text"></input></td>
+				<td><input id = "secondSunTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondSunEmployeeName" type = "text"></input></td>
+				<td><input id = "secondSunBreakStart" type = "number"></input></td>
+				<td><input id = "secondSunBreakEnd" type = "number"></input></td>
+				<td><input id = "secondSunTimeOff" type = "number"></input></td>
+				<td><input id = "secondSunTotalHour" type = "number" onkeyup = "total_hour()"></input></td>
+				<td><input id = "secondSunEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondSunClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Monday</td>
+				<td><input id = "firstMonDate" type = "text"></input></td>
+				<td><input id = "firstMonTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstMonEmployeeName" type = "text"></input></td>
+				<td><input id = "firstMonBreakStart" type = "number"></input></td>
+				<td><input id = "firstMonBreakEnd" type = "number"></input></td>
+				<td><input id = "firstMonTimeOff" type = "number"></input></td>
+				<td><input id = "firstMonTotalHour" type = "number"></input></td>
+				<td><input id = "firstMonEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstMonClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Monday</td>
+				<td><input id = "secondMonDate" type = "text"></input></td>
+				<td><input id = "secondMonTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondMonEmployeeName" type = "text"></input></td>
+				<td><input id = "secondMonBreakStart" type = "number"></input></td>
+				<td><input id = "secondMonBreakEnd" type = "number"></input></td>
+				<td><input id = "secondMonTimeOff" type = "number"></input></td>
+				<td><input id = "secondMonTotalHour" type = "number"></input></td>
+				<td><input id = "secondMonEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondMonClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Tuesday</td>
+				<td><input id = "firstTueDate" type = "text"></input></td>
+				<td><input id = "firstTueTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstTueEmployeeName" type = "text"></input></td>
+				<td><input id = "firstTueBreakStart" type = "number"></input></td>
+				<td><input id = "firstTueBreakEnd" type = "number"></input></td>
+				<td><input id = "firstTueTimeOff" type = "number"></input></td>
+				<td><input id = "firstTueTotalHour" type = "number"></input></td>
+				<td><input id = "firstTueEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstTueClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Tuesday</td>
+				<td><input id = "secondTueDate" type = "text"></input></td>
+				<td><input id = "secondTueTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondTueEmployeeName" type = "text"></input></td>
+				<td><input id = "secondTueBreakStart" type = "number"></input></td>
+				<td><input id = "secondTueBreakEnd" type = "number"></input></td>
+				<td><input id = "secondTueTimeOff" type = "number"></input></td>
+				<td><input id = "secondTueTotalHour" type = "number"></input></td>
+				<td><input id = "secondTueEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondTueClientSignature" type = "text"></input></td>			
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td><input id = "firstWedDate" type = "text"></input></td>
+				<td><input id = "firstWedTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstWedEmployeeName" type = "text"></input></td>
+				<td><input id = "firstWedBreakStart" type = "number"></input></td>
+				<td><input id = "firstWedBreakEnd" type = "number"></input></td>
+				<td><input id = "firstWedTimeOff" type = "number"></input></td>
+				<td><input id = "firstWedTotalHour" type = "number"></input></td>
+				<td><input id = "firstWedEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstWedClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td><input id = "secondWedDate" type = "text"></input></td>
+				<td><input id = "secondWedTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondWedEmployeeName" type = "text"></input></td>
+				<td><input id = "secondWedBreakStart" type = "number"></input></td>
+				<td><input id = "secondWedBreakEnd" type = "number"></input></td>
+				<td><input id = "secondWedTimeOff" type = "number"></input></td>
+				<td><input id = "secondWedTotalHour" type = "number"></input></td>
+				<td><input id = "secondWedEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondWedClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Thursday</td>
+				<td><input id = "firstThurDate" type = "text"></input></td>
+				<td><input id = "firstThurTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstThurEmployeeName" type = "text"></input></td>
+				<td><input id = "firstThurBreakStart" type = "number"></input></td>
+				<td><input id = "firstThurBreakEnd" type = "number"></input></td>
+				<td><input id = "firstThurTimeOff" type = "number"></input></td>
+				<td><input id = "firstThurTotalHour" type = "number"></input></td>
+				<td><input id = "firstThurEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstThurClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Thursday</td>
+				<td><input id = "secondThurDate" type = "text"></input></td>
+				<td><input id = "secondThurTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondThurEmployeeName" type = "text"></input></td>
+				<td><input id = "secondThurBreakStart" type = "number"></input></td>
+				<td><input id = "secondThurBreakEnd" type = "number"></input></td>
+				<td><input id = "secondThurTimeOff" type = "number"></input></td>
+				<td><input id = "secondThurTotalHour" type = "number"></input></td>
+				<td><input id = "secondThurEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondThurClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Friday</td>
+				<td><input id = "firstFriDate" type = "text"></input></td>
+				<td><input id = "firstFriTimeOnDuty" type = "number"></input></td>
+				<td><input id = "firstFriEmployeeName" type = "text"></input></td>
+				<td><input id = "firstFriBreakStart" type = "number"></input></td>
+				<td><input id = "firstFriBreakEnd" type = "number"></input></td>
+				<td><input id = "firstFriTimeOff" type = "number"></input></td>
+				<td><input id = "firstFriTotalHour" type = "number"></input></td>
+				<td><input id = "firstFriEmployeeSignature" type = "text"></input></td>
+				<td><input id = "firstFriClientSignature" type = "text"></input></td>
+			</tr>
+			<tr>
+				<td>Friday</td>
+				<td><input id = "secondFriDate" type = "text"></input></td>
+				<td><input id = "secondFriTimeOnDuty" type = "number"></input></td>
+				<td><input id = "secondFriEmployeeName" type = "text"></input></td>
+				<td><input id = "secondFriBreakStart" type = "number"></input></td>
+				<td><input id = "secondFriBreakEnd" type = "number"></input></td>
+				<td><input id = "secondFriTimeOff" type = "number"></input></td>
+				<td><input id = "secondFriTotalHour" type = "number"></input></td>
+				<td><input id = "secondFriEmployeeSignature" type = "text"></input></td>
+				<td><input id = "secondFriClientSignature" type = "text"></input></td>
+			</tr>
+		</table>
+		<p id = "para-one">I hereby certify that the hours recorded on this time sheet accurately reflect all hours actually worked and all overtime hours worked by me during this time period. I further understand that I entitled to one 10 minute rest break for each four hour shift or major fraction thereof, and a required uncompensated 30 min off duty meal period if any shift is more than 5 consecutive hours acknowledge that I have received all meals and rest breaks to which I am entitled or that I have signed a written agreement for on-duty meal periods if the nature of my work prevents me from being relieved of all duties. I acknowledge and agree that I performed no services for the benefit of the Company except as recorded on my time sheet. I further acknowledge that I have not violated a policy of the Company during the pay period, including, but not limited to, Company's policy against unauthorized overtime. <input id = "firstEmployeeInitial" type = "text" placeholder = "initial"></input></p>
+		<p id = "para-two">Command Guard Services operates on a 24 hour clock. That means that an overtime shift, while still only one shift, will cover two days. For example if you work a shift from Thursday at 2000 hours till Friday at 0400 hours, you are working ONE SHIFT that covers TWO DAYS (Thursday 2000 hours to 0059:59; and Friday 0000:01 to 0400 hours).</p>
+		<p id = "para-three">I confirm that I have not been injured during this period of employment.<input type = "text" id = "secondEmployeeInitial" placeholder = "initial"></input></p>
+		<p id = "para-four">Supervisor's Signature: <input id = "employeeSig" type = "text" placeholder = "signature" onkeyup = "total_hour()"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Hours: <input id = "totalHours" type = "number" placeholder = "total hours"></input></p>
+		<p id = "para-five">NOTE: TIME SHEET ARE DUE EVERY WEDNESDAY NO LATER THAN 10:00AM</p>
+		<p id = "para-six">Fax to (000)111-1111 or email to <a href = "mailto:timesheets@commandguards.com">timesheets@commandguards.com</a></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HollyWood Rentals</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Hollywood Rentals">
+	<meta name="author" content="Ghayoor Badshah">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:auto;width:1024px;margin-top:10px;}
+#wrapper{width:100%;}
+div{float:left;}
+#div-two{height:80px;padding-left:15px;width:51%;}
+#select-one{width:35.5%;}
+#todayDate{border-bottom:1px solid black;}
+#officerName{width:68%;border-bottom:1px solid black;}
+input{border:none;color:blue;}
+table{width:100%;border:1px solid black;border-collapse:collapse;}
+td{border:1px solid black; border-collapse:collapse;}
+.first-row{font-weight:bold;font-size:14px;}
+.second-row,.third-row,.fourth-row,.fifth-row{width:98.2%;}
+</style>
+</head>
+<body>
+	<div id = "wrapper">
+		<div id = "div-one">
+			<h1>HOLLYWOOD RENTALS</h1>
+		</div>
+		<div id = "div-two">
+			<p>Date: <input id = "todayDate" type = "text"></input> 
+			Shift: <select id = "selectShift">
+					<option selected id = "dayShift">Day</option>
+					<option id = "swingShift">Swing</option>
+					<option id = "graveYardShift">Graveyard</option>
+				</select>
+			</p>
+			<p>Officer Name: <input id = "officerName" type = "text"></p>
+		</div><br><br><br><br><br>
+		<table>
+			<tr>
+				<td class = "first-row">Driver Name</td>
+				<td class = "first-row">Driver Lic #</td>
+				<td class = "first-row">Production Name</td>
+				<td class = "first-row">Vehicle Lic Plate</td>
+				<td class = "first-row">Vehicle ID</td>
+				<td class = "first-row">Time In</td>
+				<td class = "first-row">Time Out</td>
+			</tr>
+			<tr>
+				<td><input class = "second-row" type = "text" id = "firstDriverName"></input></td>
+				<td><input class = "second-row" type = "text" id = "firstDriverLic"></input></td>
+				<td><input class = "second-row" type = "text" id = "firstProductionName"></input></td>
+				<td><input class = "second-row" type = "text" id = "firstVehiclePlate"></input></td>
+				<td><input class = "second-row" type = "text" id = "firstVehicleId"></input></td>
+				<td><input class = "second-row" type = "number" id = "firstTimeIn"></input></td>
+				<td><input class = "second-row" type = "number" id = "firstTimeOut"></input></td>
+			</tr>
+			<tr>
+				<td><input class = "second-row" type = "text" id = "secondDriverName"></input></td>
+				<td><input class = "second-row" type = "text" id = "secondDriverLic"></input></td>
+				<td><input class = "second-row" type = "text" id = "secondProductionName"></input></td>
+				<td><input class = "second-row" type = "text" id = "secondVehiclePlate"></input></td>
+				<td><input class = "second-row" type = "text" id = "secondVehicleId"></input></td>
+				<td><input class = "second-row" type = "number" id = "secondTimeIn"></input></td>
+				<td><input class = "second-row" type = "number" id = "secondTimeOut"></input></td>
+			</tr>
+			<tr>
+				<td><input class = "third-row" type = "text" id = "thirdDriverName"></input></td>
+				<td><input class = "third-row" type = "text" id = "thirdDriverLic"></input></td>
+				<td><input class = "third-row" type = "text" id = "thirdProductionName"></input></td>
+				<td><input class = "third-row" type = "text" id = "thirdVehiclePlate"></input></td>
+				<td><input class = "third-row" type = "text" id = "thirdVehicleId"></input></td>
+				<td><input class = "third-row" type = "number" id = "thirdTimeIn"></input></td>
+				<td><input class = "third-row" type = "number" id = "thirdTimeOut"></input></td>			</tr>
+			</tr>
+			<tr>
+				<td><input class = "fourth-row" type = "text" id = "fourthDriverName"></input></td>
+				<td><input class = "fourth-row" type = "text" id = "fourthDriverLic"></input></td>
+				<td><input class = "fourth-row" type = "text" id = "fourthProductionName"></input></td>
+				<td><input class = "fourth-row" type = "text" id = "fourthVehiclePlate"></input></td>
+				<td><input class = "fourth-row" type = "text" id = "fourthVehicleId"></input></td>
+				<td><input class = "fourth-row" type = "number" id = "fourthTimeIn"></input></td>
+				<td><input class = "fourth-row" type = "number" id = "fourthTimeOut"></input></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

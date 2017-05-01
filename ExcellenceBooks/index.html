@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "utf-8">
+<head>
+<link rel = "stylesheet" href = "sass/style.css">
+<link rel = "stylesheet" href = "sass/bootstrap.css">
+<script src = "scripts/angular.js"></script>
+<script src = "scripts/ng-route.js"></script>
+<script src = "scripts/app1.js"></script>
+<script src = "scripts/app.js"></script>
+</head>
+<body ng-app = "myApp">
+
+<div class = "my_nav" ng-controller = "myCtrl">
+
+	<ul>
+		<li><a href = "#index" onClick = "homeftn()">Home</a></li>
+		<li><a href = "#web" onClick = "webftn()">Web</a></li>
+		<li><a href = "#prog" onClick = "progftn()">Programming</a></li>
+		<li><a href = "#os" onClick = "osftn()">Operating System</a>
+		</li>
+
+	</ul>
+</div>
+<div ng-view class = "view"></div>
+<section ng-controller = "myCtrl" id = "section_one">
+	<div class = "main_pane">
+	<marquee behaviour = "left">
+	<img src = "{{myBooks.os[myBooks.counter]}}" class = "mainImage">
+	<img src = "{{myBooks.pro[myBooks.counter]}}" class = "mainImage">
+	<img src = "{{myBooks.web[myBooks.counter]}}" class = "mainImage">
+	<img src = "{{myBooks.os[myBooks.counter+1]}}" class = "mainImage">
+
+	</marquee>
+	</div>	
+</section>
+<section ng-controller = "myCtrl" id = "section_two">
+	<div class = "firstImages">
+		<img src = "{{myBooks.os[myBooks.counter]}}" class = "subImage">
+		<img src = "{{myBooks.os[myBooks.counter+1]}}" class = "subImage">
+		<img src = "{{myBooks.os[myBooks.counter+2]}}" class = "subImage">
+		<img src = "{{myBooks.os[myBooks.counter+3]}}" class = "subImage">	
+		<img src = "{{myBooks.os[myBooks.counter+4]}}" class = "subImage">
+	</div>
+	<div class = "secondImages">
+		<img src = "{{myBooks.pro[myBooks.counter]}}" class = "subImage">
+		<img src = "{{myBooks.pro[myBooks.counter+1]}}" class = "subImage">
+		<img src = "{{myBooks.pro[myBooks.counter+2]}}" class = "subImage">	
+		<img src = "{{myBooks.pro[myBooks.counter+3]}}" class = "subImage">
+		<img src = "{{myBooks.pro[myBooks.counter+4]}}" class = "subImage">
+	</div>
+	<div class = "thirdImages">
+		<img src = "{{myBooks.web[myBooks.counter]}}" class = "subImage">
+		<img src = "{{myBooks.web[myBooks.counter+1]}}" class = "subImage">
+		<img src = "{{myBooks.web[myBooks.counter+2]}}" class = "subImage">	
+		<img src = "{{myBooks.web[myBooks.counter+3]}}" class = "subImage">
+		<img src = "{{myBooks.web[myBooks.counter+4]}}" class = "subImage">
+
+	</div>
+</section>
+<aside id = "aside">
+	<marquee direction = up behavior = alternate>
+		Excellenence Books a store to buy books of web programming and computer programming</marquee>
+</aside>
+<footer>
+	<p>&copy; 2014 reserved</p>
+</footer>
+</body>
+</html>

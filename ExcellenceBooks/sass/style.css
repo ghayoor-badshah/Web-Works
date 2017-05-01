@@ -1,0 +1,160 @@
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+ul li {
+  padding-right: 100px;
+  display: inline-block;
+  color: white;
+  font-size: 17px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  font-weight: bold;
+}
+ul li a:link {
+  color: white;
+}
+
+.my_nav {
+  width: 800px;
+  height: 25px;
+  background-color: gray;
+  margin: 10px auto;
+  border-radius: 2px;
+  behavior: url(sass/PIE.htc);
+}
+
+#section_one {
+  width: 680px;
+  height: 25px;
+  margin: 5px auto;
+  margin-top: 10px;
+  border-radius: 2px;
+  behavior: url(sass/PIE.htc);
+}
+
+#section_two {
+  width: 680px;
+  height: 25px;
+  margin: 5px auto;
+  margin-top: 10px;
+  border-radius: 2px;
+  behavior: url(sass/PIE.htc);
+}
+
+.view {
+  margin: 5px 0px 0px 320px;
+  margin-top: 10px;
+  border-radius: 2px;
+  behavior: url(sass/PIE.htc);
+}
+
+.main_pane {
+  height: 150px;
+  width: 680px;
+  float: left;
+  border: 1px solid silver;
+  margin: 10px 5px 0px 5px;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  behavior: url(sass/PIE.htc);
+}
+
+.firstImages {
+  height: 100px;
+  width: 420px;
+  border: 1px solid silver;
+  margin: 200px 5px 0px 5px;
+}
+
+.secondImages {
+  height: 100px;
+  width: 420px;
+  border: 1px solid silver;
+  margin: 20px 5px 0px 5px;
+}
+
+.thirdImages {
+  height: 100px;
+  width: 420px;
+  border: 1px solid silver;
+  margin: 20px 5px 0px 5px;
+}
+
+#aside {
+  height: 342px;
+  width: 200px;
+  border: 1px solid silver;
+  float: left;
+  margin-top: -30px;
+  margin-left: 810px;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  behavior: url(sass/PIE.htc);
+  padding: 2px 2px 0px 2px;
+  font-size: 14px;
+  text-shadow: 0px 2px 3px #555;
+  text-align: justify;
+}
+
+footer {
+  width: 800px;
+  height: 20px;
+  background-color: gray;
+  text-align: center;
+  color: white;
+  border-radius: 2px;
+  behavior: url(sass/PIE.htc);
+  margin: 330px auto;
+}
+
+.mainImage {
+  width: 150px;
+  height: 150px;
+}
+
+.subImage {
+  width: 80px;
+  height: 98px;
+}
+
+.webImages {
+  width: 150px;
+  height: 150px;
+  padding: 5px 0px 0px 7px;
+}
+
+.webhtml {
+  margin: 10px 10px 10px;
+  width: 160px;
+  height: 160px;
+  border: 1px solid silver;
+  float: left;
+}
+
+.webDes {
+  height: 160px;
+  width: 400px;
+  float: left;
+  padding: 2px 0px 0px 10px;
+  border: 1px solid silver;
+  margin: 10px 5px 0px 5px;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  behavior: url(sass/PIE.htc);
+}
+
+.formError {
+  color: silver;
+  font-size: 11px;
+}
+
+#myForm_one {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

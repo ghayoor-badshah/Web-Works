@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrews International-Payroll Submission</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Andrews International-Payroll Submission">
+	<meta name="author" content="Ghayoor Badshah">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:auto;width:1024px;margin-top:2px;}
+#wrapper{width:100%;border:0px;font-size:13.3px;}
+h2{margin-top:-5px;margin-bottom:1px;}
+div{float:left;width:95%;}
+#div-one{border:0px;width:98%;text-align:center;}
+#table-one{border:0px;margin-left:23px;width:97%;border-collapse:collapse;}
+#div-two{font-weight:bold;}
+#table-one td{font-weight:border-bottom:1px;border-right:0px;border-left:0px;border-top:0px;}
+#para-div-three,#para-div-four,#para-div-five{margin-top:1px;margin-bottom:1px;}
+td{border:1px solid black;border-collapse:collapse;}
+#div-three,#div-four{border:0px;font-weight:bold;text-align:center;}
+#div-five{font-weight:bold;border:0px;}
+#table-two{border:1px solid blue;width:100%;border-collapse:collapse;}
+#table-two input{width:97%;}
+.row-class{font-weight:bold;}
+#table-two-cell-one{text-align:center;}
+.para-one{text-align:center;margin-top:0;margin-bottom:1px;letter-spacing:5px;}
+input{border:0;color:blue;}
+</style>
+<script>
+	function total_hours_fri_first(){
+		if(document.getElementById("firstFridayTimeOut").value == 0000){
+			 document.getElementById("firstFridayTotal").value = 2400 - parseInt(document.getElementById("firstFridayTimeIn").value);
+		}
+		else {
+			document.getElementById("firstFridayTotal").value =parseInt(document.getElementById("firstFridayTimeOut").value) - parseInt(document.getElementById("firstFridayTimeIn").value);
+		}
+	}
+	function total_hours_fri_second(){
+		if(document.getElementById("secondFridayTimeOut").value == 0000){
+			 document.getElementById("secondFridayTotal").value = 2400 - parseInt(document.getElementById("secondFridayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondFridayTotal").value =parseInt(document.getElementById("secondFridayTimeOut").value) - parseInt(document.getElementById("secondFridayTimeIn").value);
+		}
+	}
+	function total_hours_sat_first(){
+		if(document.getElementById("firstSaturdayTimeOut").value == 0000){
+			 document.getElementById("firstSaturdayTotal").value = 2400 - parseInt(document.getElementById("firstSaturdayTimeIn").value);
+		}
+		else{
+			document.getElementById("firstSaturdayTotal").value =parseInt(document.getElementById("firstSaturdayTimeOut").value) - parseInt(document.getElementById("firstSaturdayTimeIn").value);
+		}
+	}
+	function total_hours_sat_second(){
+		if(document.getElementById("secondSaturdayTimeOut").value == 0000){
+			 document.getElementById("secondSaturdayTotal").value = 2400 - parseInt(document.getElementById("secondSaturdayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondSaturdayTotal").value =parseInt(document.getElementById("secondSaturdayTimeOut").value) - parseInt(document.getElementById("secondSaturdayTimeIn").value);
+		}
+	}
+	function total_hours_sun_first(){
+		if(document.getElementById("firstSundayTimeOut").value == 0000){
+			 document.getElementById("firstSundayTotal").value = 2400 - parseInt(document.getElementById("firstSundayTimeIn").value);
+		}
+		else{
+			document.getElementById("firstSundayTotal").value =parseInt(document.getElementById("firstSundayTimeOut").value) - parseInt(document.getElementById("firstSundayTimeIn").value);
+		}
+	}
+	function total_hours_sun_second(){
+		if(document.getElementById("secondSundayTimeOut").value == 0000){
+			 document.getElementById("secondSundayTotal").value = 2400 - parseInt(document.getElementById("secondSundayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondSundayTotal").value =parseInt(document.getElementById("secondSundayTimeOut").value) - parseInt(document.getElementById("secondSundayTimeIn").value);
+		}
+	}
+	function total_hours_mon_first(){
+		if(document.getElementById("firstMondayTimeOut").value == 0000){
+			 document.getElementById("firstMondayTotal").value = 2400 - parseInt(document.getElementById("firstMondayTimeIn").value);
+		}
+		else{
+			document.getElementById("firstMondayTotal").value =parseInt(document.getElementById("firstMondayTimeOut").value) - parseInt(document.getElementById("firstMondayTimeIn").value);
+		}
+	}
+	function total_hours_mon_second(){
+		if(document.getElementById("secondMondayTimeOut").value == 0000){
+			 document.getElementById("secondMondayTotal").value = 2400 - parseInt(document.getElementById("secondMondayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondMondayTotal").value =parseInt(document.getElementById("secondMondayTimeOut").value) - parseInt(document.getElementById("secondMondayTimeIn").value);
+		}
+	}
+	function total_hours_tue_first(){
+		if(document.getElementById("firstTuesdayTimeOut").value == 0000){
+			 document.getElementById("firstTuesdayTotal").value = 2400 - parseInt(document.getElementById("firstTuesdayTimeIn").value);
+		}
+		else{
+			document.getElementById("firstTuesdayTotal").value =parseInt(document.getElementById("firstTuesdayTimeOut").value) - parseInt(document.getElementById("firstTuesdayTimeIn").value);
+		}
+	}
+	function total_hours_tue_second(){
+		if(document.getElementById("secondTuesdayTimeOut").value == 0000){
+			 document.getElementById("secondTuesdayTotal").value = 2400 - parseInt(document.getElementById("secondTuesdayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondTuesdayTotal").value =parseInt(document.getElementById("secondTuesdayTimeOut").value) - parseInt(document.getElementById("secondTuesdayTimeIn").value);
+		}
+	}
+	function total_hours_wed_first(){
+		if(document.getElementById("firstWednesdayTimeOut").value == 0000){
+			 document.getElementById("firstWednesdayTotal").value = 2400 - parseInt(document.getElementById("firstWednesdayTimeIn").value);
+		}
+		else{
+			document.getElementById("firstWednesdayTotal").value =parseInt(document.getElementById("firstWednesdayTimeOut").value) - parseInt(document.getElementById("firstWednesdayTimeIn").value);
+		}
+	}
+	function total_hours_wed_second(){
+		if(document.getElementById("secondWednesdayTimeOut").value == 0000){
+			 document.getElementById("secondWednesdayTotal").value = 2400 - parseInt(document.getElementById("secondWednesdayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondWednesdayTotal").value =parseInt(document.getElementById("secondWednesdayTimeOut").value) - parseInt(document.getElementById("secondWednesdayTimeIn").value);
+		}
+	}
+	function total_hours_thu_first(){
+		if(document.getElementById("firstThursdayTimeOut").value == 0000){
+			 document.getElementById("firstThursdayTotal").value = 2400 - parseInt(document.getElementById("firstThursdayTimeIn").value);
+		}
+		else{
+			document.getElementById("firstThursdayTotal").value =parseInt(document.getElementById("firstThursdayTimeOut").value) - parseInt(document.getElementById("firstThursdayTimeIn").value);
+		}
+	}
+	function total_hours_thu_second(){
+		if(document.getElementById("secondThursdayTimeOut").value == 0000){
+			 document.getElementById("secondThursdayTotal").value = 2400 - parseInt(document.getElementById("secondThursdayTimeIn").value);
+		}
+		else{
+			document.getElementById("secondThursdayTotal").value =parseInt(document.getElementById("secondThursdayTimeOut").value) - parseInt(document.getElementById("secondThursdayTimeIn").value);
+		}
+	}
+	function total_over_time_hours(){
+		document.getElementById("overTimeHours").value = parseInt(document.getElementById("regularHours").value) - 4000;
+	}
+	function total_double_time_hours(){
+		if(document.getElementById("overTimeHours").value > 7999){
+			document.getElementById("doubleTime").value = parseInt(document.getElementById("overTimeHours").value) -7999;
+		}	
+	}
+</script>
+</head>
+<body>
+	<div id = "wrapper">
+		<div id = "div-one">
+			<h2 id = "andrewsPayrollSub">Andrews International-Payroll Submission</h2>
+			<h2 id = "mbsSylmar">MBS - SYLMAR</h2>
+		</div>
+		<h2>Fax</h2>
+		<div id = "div-two">
+			<table id = "table-one">
+				<tr>
+					<td id = "to">To:</td>
+					<td id = "toName">Ryan Deniston</td>
+					<td id = "from">From:</td>
+					<td><input class = "row-class" id = "fromName" type = "text"></input></td>
+				</tr>
+				<tr>
+					<td id = "eFax">E-Fax:</td>
+					<td id = "eFaxNo">1-818-301-3126</td>
+					<td id = "pages">Pages:</td>
+					<td id = "pagesNo">1</td>
+				</tr>
+				<tr>
+					<td id = "toPhone">Phone:</td>
+					<td id = "toPhoneNo">818-602-3768</td>
+					<td id = "todayDate">Date:</td>
+					<td><input class = "row-class" id = "toTodayDate" type = "text"></input></td>
+				</tr>
+			</table>
+			</div>
+		<div id = "div-three">
+				<p id = "para-div-three">If you have any question please contact your Site Supervisor</p>
+		</div>
+		<div id = "div-four">
+				<p id = "para-div-four">FAX TIME SHEETS</p>
+				<p id = "para-div-four">EVERY <u>FRIDAY</u> NO LATER THAN 0700 HOURS</p>
+		</div>
+		<div id = "div-five">
+				<p id = "para-div-five">Officer Cell or Contact#: <input class = "row-class" id = "officerContactNo" type = "text"></input></p>
+		</div>
+		<div id = "six">
+			<table id = "table-two">
+				<tr>
+					<td colspan = "8" class = "row-class">
+						<p class ="para-one">ANDREWS INTERNATIONAL</p>
+						<p class ="para-one">WEEKLY TIME RECORD</p>
+					</td>
+				</tr>
+				<tr>
+					<td class = "row-class">NAME:</td>
+					<td colspan = "3"><input class = "row-class" id = "officerName" type = "text"></input></td>
+					<td class = "row-class">Last 4 of SSN:</td>
+					<td><input class = "row-class" id = "officerSsn" type = "number"></input></td>
+					<td class = "row-class">W/E:</td>
+					<td><input class = "row-class" id = "weekDate" type = "text"></input></td>
+				</tr>
+				<tr>
+					<td class = "row-class">Date</td>
+					<td class = "row-class">Day</td>
+					<td class = "row-class">Location / Post</td>
+					<td class = "row-class">Time In</td>
+					<td class = "row-class">Meal Start</td>
+					<td class = "row-class">Meal End</td>
+					<td class = "row-class">Time Out</td>
+					<td class = "row-class">Total</td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstFridayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">FRI</td>
+					<td><input class = "row-class" id = "firstFridayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstFridayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstFridayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstFridayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstFridayTimeOut" type = "number" onkeyup = "total_hours_fri_first()"></input></td>
+					<td><input class = "row-class" id = "firstFridayTotal" type = "number" value = "0" onkeyup = "document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondFridayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondFridayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondFridayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondFridayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondFridayTimeOut" type = "number" onkeyup = "total_hours_fri_second()"></input></td>
+					<td><input class = "row-class" id = "secondFridayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstSaturdayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">SAT</td>
+					<td><input class = "row-class" id = "firstSaturdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstSaturdayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstSaturdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstSaturdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstSaturdayTimeOut" type = "number" onkeyup = "total_hours_sat_first()"></input></td>
+					<td><input class = "row-class" id = "firstSaturdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondSaturdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondSaturdayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondSaturdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondSaturdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondSaturdayTimeOut" type = "number" onkeyup = "total_hours_sat_second()"></input></td>
+					<td><input class = "row-class" id = "secondSaturdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstSundayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">SUN</td>
+					<td><input class = "row-class" id = "firstSundayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstSundayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstSundayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstSundayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstSundayTimeOut" type = "number" onkeyup = "total_hours_sun_first()"></input></td>
+					<td><input class = "row-class" id = "firstSundayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondSundayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondSundayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondSundayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondSundayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondSundayTimeOut" type = "number" onkeyup = "total_hours_sun_second()"></input></td>
+					<td><input class = "row-class" id = "secondSundayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstMondayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">MON</td>
+					<td><input class = "row-class" id = "firstMondayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstMondayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstMondayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstMondayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstMondayTimeOut" type = "number" onkeyup = "total_hours_mon_first()"></input></td>
+					<td><input class = "row-class" id = "firstMondayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondMondayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondMondayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondMondayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondMondayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondMondayTimeOut" type = "number" onkeyup = "total_hours_mon_second()"></input></td>
+					<td><input class = "row-class" id = "secondMondayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstTuesdayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">TUE</td>
+					<td><input class = "row-class" id = "firstTuesdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstTuesdayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstTuesdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstTuesdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstTuesdayTimeOut" type = "number" onkeyup = "total_hours_tue_first()"></input></td>
+					<td><input class = "row-class" id = "firstTuesdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondTuesdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondTuesdayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondTuesdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondTuesdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondTuesdayTimeOut" type = "number" onkeyup = "total_hours_tue_second()"></input></td>
+					<td><input class = "row-class" id = "secondTuesdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstWednesdayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">WED</td>
+					<td><input class = "row-class" id = "firstWednesdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstWednesdayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstWednesdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstWednesdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstWednesdayTimeOut" type = "number" onkeyup = "total_hours_wed_first()"></input></td>
+					<td><input class = "row-class" id = "firstWednesdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondWednesdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondWednesdayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondWednesdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondWednesdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondWednesdayTimeOut" type = "number" onkeyup = "total_hours_wed_second()"></input></td>
+					<td><input class = "row-class" id = "secondWednesdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><input class = "row-class" id = "firstThursdayDate" type = "text"></input></td>
+					<td class = "row-class" rowspan = "2">THU</td>
+					<td><input class = "row-class" id = "firstThursdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "firstThursdayTimeIn" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstThursdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstThursdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "firstThursdayTimeOut" type = "number" onkeyup = "total_hours_thu_first()"></input></td>
+					<td><input class = "row-class" id = "firstThursdayTotal" type = "number" value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td><input class = "row-class" id = "secondThursdayLocation" type = "text"></input></td>
+					<td><input class = "row-class" id = "secondThursdayTimeIn"type = "number"></input></td>
+					<td><input class = "row-class" id = "secondThursdayMealStart" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondThursdayMealEnd" type = "number"></input></td>
+					<td><input class = "row-class" id = "secondThursdayTimeOut" type = "number" onkeyup = "total_hours_thu_second()"></input></td>
+					<td><input class = "row-class" id = "secondThursdayTotal" type = "number"  value = "0" onkeyup ="document.getElementById('regularHours').value = parseInt(document.getElementById('regularHours').value) + parseInt(this.value)"></input></td>
+				</tr>
+				<tr>
+					<td class = "row-class">Employee Signature:</td>
+					<td  colspan = "5"><input id = "employeeSignature" type = "text" class = "row-class"></input></td>
+					<td>REG HRS</td>
+					<td><input class = "row-class" id = "regularHours" type = "number" value = "0" onkeyup = "total_over_time_hours()"></input></td>
+				</tr>
+				<tr>
+					<td>O/T Authorized by:</td>
+					<td  colspan = "5"><input id = "overTimeAuthorizedBy" type = "text" class = "row-class"></input></td>
+					<td>O/T HRS</td>
+					<td><input id = "overTimeHours" class = "row-class" type = "number" onkeyup = "total_double_time_hours()"></input></td>
+				</tr>
+				<tr>
+					<td>O/T Reason: Open Shift Coverage</td>
+					<td  colspan = "5"><input id = "overTimeReason" type = "text" class = "row-class"></input></td>
+					<td>DBL TIME</td>
+					<td><input id = "doubleTime" class = "row-class" type = "number"></input></td>
+				</tr>
+				<tr>
+					<td>D/T Authorized:</td>
+					<td  colspan = "5"><input id = "doubleTimeAuthorizedBy"type = "text" class = "row-class"></input></td>
+					<td>HOL WRK</td>
+					<td><input id = "holidayWork" class = "row-class" type = "number" value = "0"></input></td>
+				</tr>
+				<tr>
+					<td>D/T Reason:</td>
+					<td  colspan = "5"><input id = "doubleTimeReason" type = "text" class = "row-class"></input></td>
+					<td>HOL OFF</td>
+					<td><input id = "holidayOff" class = "row-class" type = "number" value = "0"></input></td>
+				</tr>
+				<tr>
+					<td colspan = "8">
+						I hereby certify and declare under penalty of perjury that this time record fully and accurately reports all the time I have worked during the covered pay period. I understand that I am entitled to rest periods each workday at the rate of 10 minutes net rest for each 4 hours of work or major fraction thereof and meal break of 30 minutes within the first 5 hours of the start of my shift. I hereby certify and declare that I have received all of my rest periods and meal breaks in accordance with these requirements during each workday that occured within the pay period.
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

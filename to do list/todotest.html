@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta charset = "utf-8">
+<head>
+<title>To Do List</title>
+<style>
+h4{
+	margin: 0% 0% 0% 30%;
+}
+li {
+	list-style: none;
+}
+div h3 {
+	border-bottom: 1px solid black;
+	width: 135px;
+}
+span{
+	color: red;
+	text-decoration: line-through;
+}
+</style>
+<script src = "angular.js"></script>
+<script src = "app.js"></script>
+</head>
+<body ng-app = "myApp">
+<h4>To Do List</h4>
+<hr />
+<div ng-controller = "myCtrl">
+	<input type = "text" ng-model = "text_one">
+	<button ng-click = "add()">Add Task</button>
+	<div><h3>Pendding Task</h3></div>
+	<p ng-repeat = "input in pendding track by $index">
+		<input type = "checkbox" checked ng-click = "complete_one($index)">{{input}}
+		<p>{{counter_one + " task pendding"}}</p>
+	</p>
+	<div><h3>Completed Task</h3></div>
+	<p ng-repeat = "task in finished track by $index">
+		<input type = "checkbox" checked><span>{{task}}</span>
+		<button ng-click = "remove($index)">Remove</button>
+		<p>{{counter_two +" task completed"}}</p>
+	</p>
+	</div>
+</div>
+</body>
+</html>
+
